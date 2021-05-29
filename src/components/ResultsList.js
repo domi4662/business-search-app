@@ -10,7 +10,7 @@ import { withNavigation } from 'react-navigation';
 import ResultsDetail from './ResultsDetail';
 
 const ResultsList = ({ title, results, navigation }) => {
-  if (!results.length) {
+  if (results && !results.length) {
     return null;
   }
 
